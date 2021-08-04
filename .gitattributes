@@ -1,0 +1,8 @@
+client/gulpfile.ts linguist-vendored
+client/package.json linguist-vendored
+client/package-lock.json linguist-vendored
+
+server/jest.config.ts linguist-vendored
+server/gulpfile.ts linguist-vendored
+server/package.json linguist-vendored
+server/package-lock.json linguist-vendored

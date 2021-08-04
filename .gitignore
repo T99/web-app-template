@@ -1,0 +1,16 @@
+# Ignore Jetbrains IDE meta-files.
+.idea/
+
+# Ignore all of the generated files in '/dist'.
+dist/
+
+# Ignore node_modules on client and server.
+client/node_modules/
+server/node_modules/
+
+# Ignore Jest output files.
+server/tests/coverage/
+
+# Ignore the credentials.json and settings.json files.
+server/credentials.json
+server/settings.json

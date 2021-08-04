@@ -1,0 +1,98 @@
+@import "reset";
+@import "helpers";
+
+// Import 'Fira Sans Condensed' font.
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed:ital,wght@0,300;0,400;0,600;1,300;1,400;1,600&display=swap');
+
+// The default coloration for light mode/default mode.
+$lightModeFG: black;
+$lightModeBG: white;
+
+// The default coloration for dark mode.
+$darkModeFG: white;
+$darkModeBG: #333;
+
+// Color scheme.
+$primaryColor: #00538D;
+$secondaryColor: #8E979D;
+
+:root {
+
+	--defaultForegroundColor: #{$lightModeFG};
+	--defaultBackgroundColor: #{$lightModeBG};
+	--primaryColor: #{$primaryColor};
+	--secondaryColor: #{$secondaryColor};
+
+	&.light-mode {
+
+		--defaultForegroundColor: #{$lightModeFG};
+		--defaultBackgroundColor: #{$lightModeBG};
+
+	}
+
+	&.dark-mode {
+
+		--defaultForegroundColor: #{$darkModeFG};
+		--defaultBackgroundColor: #{$darkModeBG};
+
+	}
+
+	@media (prefers-color-scheme: dark) {
+
+		--defaultForegroundColor: #{$darkModeFG};
+		--defaultBackgroundColor: #{$darkModeBG};
+
+	}
+
+}
+
+html, body {
+
+	color: var(--defaultForegroundColor);
+	background: var(--defaultBackgroundColor);
+
+	font-family: "Fira Sans Condensed", sans-serif;
+	font-size: 16px;
+	
+}
+
+p, li, a, label, input, button, h1, h2, h3, h4, h5, h6 {
+	
+	font-family: "Fira Sans Condensed", sans-serif;
+	font-weight: normal;
+	
+}
+
+noscript.javascript-required-notification {
+
+	@include flex-column;
+
+	position: absolute;
+	height: 100vh;
+	width: 100vw;
+	inset: 0;
+	z-index: 100;
+	background: var(--defaultBackgroundColor);
+
+	div {
+
+		h1 {
+
+			font-size: 4em;
+			font-weight: bold;
+			text-align: center;
+			margin-bottom: 0.2em;
+
+		}
+
+		p {
+
+			font-size: 1.4em;
+			text-align: center;
+			padding: 0 20px;
+
+		}
+
+	}
+
+}

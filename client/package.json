@@ -1,0 +1,51 @@
+{
+	"name": "dotgrab-server",
+	"version": "0.1.0",
+	"description": "dotgrab client - Dotfile and configuration file management app.",
+	"main": "main.js",
+	"scripts": {
+		"build": "gulp --gulpfile ../gulpfile.ts"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/T99/dotgrab.io.git"
+	},
+	"keywords": [
+		"dotfile",
+		"config",
+		"configuration",
+		"config-file",
+		"configuration-file",
+		"dev-tool"
+	],
+	"author": "Trevor Sears <trevorsears.main@gmail.com> (https://trevorsears.io/)",
+	"license": "GPL-3.0-or-later",
+	"bugs": {
+		"url": "https://github.com/T99/dotgrab.io/issues"
+	},
+	"homepage": "https://github.com/T99/dotgrab.io#readme",
+	"dependencies": {
+		"regenerator-runtime": "^0.13.9"
+	},
+	"devDependencies": {
+		"@babel/core": "^7.14.8",
+		"@babel/preset-env": "^7.14.8",
+		"babel-loader": "^8.2.2",
+		"babelify": "10.0.0",
+		"browserify": "^17.0.0",
+		"gulp-sass": "^5.0.0",
+		"node-sass": "^6.0.1",
+		"gulp-clean-css": "^4.3.0",
+		"gulp-htmlmin": "^5.0.1",
+		"webpack-stream": "^5.2.1",
+		"vinyl-named": "^1.1.0",
+		"through2": "^4.0.2",
+		"gulp-terser": "^2.0.1",
+		"vinyl-buffer": "^1.0.1",
+		"vinyl-source-stream": "^2.0.0",
+		"@types/gulp-sass": "^5.0.0",
+		"@types/gulp-clean-css": "^4.3.0",
+		"@types/webpack-stream": "^3.2.12",
+		"@types/gulp-terser": "^1.2.1"
+	}
+}

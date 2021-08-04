@@ -1,0 +1,42 @@
+@mixin flex-row {
+	
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	
+}
+
+@mixin flex-column {
+	
+	@include flex-row;
+	flex-direction: column;
+	
+}
+
+@mixin basic-box-shadow {
+	
+	box-shadow: 2px 2px 5px 0 grey;
+	
+}
+
+@mixin hide-scrollbars {
+	
+	overflow-y: scroll;
+	scrollbar-width: none; // Firefox
+	-ms-overflow-style: none;  // IE 10+
+	
+	// Webkit
+	&::-webkit-scrollbar {
+	
+		height: 0;
+		width: 0;
+		
+	}
+
+}
+
+.flex-balloon {
+	
+	flex: 1;
+	
+}
