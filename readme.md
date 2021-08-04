@@ -1,2 +1,3 @@
-# dotgrab.io
-Dotfile and configuration file management app.
+# Webapp Template Repository
+Template repository for TypeScript+Node based webapps.
+

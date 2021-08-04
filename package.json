@@ -1,7 +1,7 @@
 {
-	"name": "dotgrab-app",
+	"name": "web-app-template",
 	"version": "0.1.0",
-	"description": "dotgrab app - Dotfile and configuration file management app.",
+	"description": "Template repository for TypeScript+Node based webapps.",
 	"main": "main.js",
 	"scripts": {
 		"build": "gulp --gulpfile gulpfile.ts"
@@ -11,19 +11,13 @@
 		"url": "git+https://github.com/T99/dotgrab.io.git"
 	},
 	"keywords": [
-		"dotfile",
-		"config",
-		"configuration",
-		"config-file",
-		"configuration-file",
-		"dev-tool"
 	],
 	"author": "Trevor Sears <trevorsears.main@gmail.com> (https://trevorsears.io/)",
 	"license": "GPL-3.0-or-later",
 	"bugs": {
-		"url": "https://github.com/T99/dotgrab.io/issues"
+		"url": "https://github.com/T99/<REPO_NAME_HERE>/issues"
 	},
-	"homepage": "https://github.com/T99/dotgrab.io#readme",
+	"homepage": "https://github.com/T99/<REPO_NAME_HERE>/readme",
 	"dependencies": {
 		
 	},
